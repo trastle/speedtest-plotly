@@ -41,7 +41,7 @@ def plot_test_results(results_dict, plotly_user, plotly_api_key, plotly_graph_na
     )
 
     plotdata = [uploadtrace, downloadtrace, latencytrace]
-    plot_url = plotly.plotly.plot(plotdata, filename='plotly_graph_name', fileopt='extend', auto_open=False)
+    plot_url = plotly.plotly.plot(plotdata, filename=plotly_graph_name, fileopt='extend', auto_open=False)
     return plot_url
 
 def main():
