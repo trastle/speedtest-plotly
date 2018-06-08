@@ -8,15 +8,14 @@ Based on [Matt's Blog Post](https://www.matt-j.co.uk/2017/09/25/measuring-intern
 
 ## Usage
 
-
 ```
-docker run -e PLOTLY_USER=xxx -e PLOTLY_API_KEY=xxx speedtest-plotly
+docker run -e PLOTLY_USER=xxx -e PLOTLY_API_KEY=xxx trastle/speedtest-plotly
 ```
 
 ## Configuration
 
-```
-PLOTLY_USER - Your Plotly username
-PLOTLY_API_KEY - Your Plotly API key
-PLOTLY_GRAPH_NAME - (Optional) The name of your Plotly graph - defaults to SpeedTest
-```
+| Variable          | Required | Description                   | Default   |
+| ----------------- |----------|-------------------------------|-----------|
+| PLOTLY_USER       | True     | Your Plotly username          |           |
+| PLOTLY_API_KEY    | True     | Your Plotly API key           |           |
+| PLOTLY_GRAPH_NAME | False    | The name of your Plotly graph | SpeedTest |
